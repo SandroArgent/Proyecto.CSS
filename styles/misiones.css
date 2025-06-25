@@ -1,19 +1,20 @@
 .contenedor{
-    display: flex;
-    justify-content: center;
+    display: flex; /*  flexbox para organizar el contenido dentro del contenedor. */
+    justify-content: center;   /* Centra horizontalmente el contenido (la tabla). */
 }
 
 table{
-    border-collapse: collapse;
+    
+    border-collapse: collapse; /*border-collapse: collapse: hace que los bordes de la tabla y sus celdas se fusionen, sin espacios entre ellos.*/
     border: 2px solid rgb(11, 172, 212);
-    letter-spacing: 1px;
-    font-size: 1.5rem;
+    letter-spacing: 1px;  /*separa un poco las letras.*/
+    font-size: 1.5rem; /*agranda el texto (1.5 veces el tamaño base).*/
     background-color: rgb(206, 221, 243);
 }
 
 th{
     text-align: left;
-    border: 1px solid rgb(133, 101, 175);
+    border: 1px solid rgb(133, 101, 175);  /* Borde morado claro para separar los encabezados. */
     padding: 10px;
     background-color: rgb(110, 110, 110);
 }
@@ -25,7 +26,7 @@ td{
 
 h2{
     margin: 0;
-    padding: 20px;
+    padding: 20px; 
 }
 
 tr:hover{

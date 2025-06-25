@@ -1,9 +1,10 @@
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  /* Establezco una fuente legible. */
     background: linear-gradient(to right, rgb(199, 112, 187), rgb(49, 3, 102));
-    padding: 0;
-    margin: 0;
-    padding-bottom: 100px;
+    padding: 0;  /* saco el espacio interno por defecto. */
+    margin: 0;   /* saco el margen exterior por defecto. */
+    padding-bottom: 100px; /* añado un espacio abajo del body (para que el contenido no quede oculto detrás del footer fijo). */
      
 }
 
@@ -16,27 +17,27 @@ header{
 }
 
 ul{
-    list-style-type: none;
+    list-style-type: none; /* borro los puntos de la lista. */
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden; /*Overflow evita que el contenido se desborde, textto*/
     background-color: gray;
 }
 
 li{
-    float: left;
+    float: left;  /* Coloca los <li> en línea horizontalmente (uno al lado del otro). */
 }
 
 li a{
-    display: block;
+    display: block;  /* Hace que el <a> se comporte como bloque (toma todo el ancho del <li>). */
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 15px;  /* Espaciado interno para que el menú se vea grande. */
     text-decoration: none;
 }
 
-li a:hover:not(.active){
-    background-color: black;
+li a:hover:not(.active){ 
+    background-color: black;  /* Al pasar el mouse, el fondo se vuelve negro (excepto si ya está activo). */
 }
 
 h1{
@@ -51,8 +52,8 @@ footer{
     color: white;
     padding: 10px;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: fixed;   /* Fija el footer al fondo de la pantalla. */
+    bottom: 0; /* Lo coloco en la parte inferior. */
+    width: 100%; /* Ocupa todo el ancho de la pantalla. */
 
 }

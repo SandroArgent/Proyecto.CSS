@@ -9,8 +9,9 @@
     margin: 0;
 }
 
-.contenedor{
-    max-width: 100%;
+.contenedor{ /*	Aplica a cualquier elemento con class="contenedor"*/
+    
+    max-width: 100%; /*max-width: 100% significa que el ancho máximo que puede tener el contenedor será del 100% del ancho de su contenedor padre. Esto evita que se desborde*/
     margin: 0 auto;
     padding: 20px;
 }
@@ -26,7 +27,8 @@
     float: left;
     margin: 0 20px 20px 0;
     max-width: 25%;
-    height: auto;
+    
+    height: auto; /*Esta propiedad indica que el alto del elemento se ajustará automáticamente según su contenido.*/
 }
 
 p{

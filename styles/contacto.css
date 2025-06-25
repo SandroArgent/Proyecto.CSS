@@ -1,23 +1,23 @@
 .contenedor{
     background-color: #999;
-    border-radius: 10px;
-    margin: 10px 0;
+    border-radius: 10px; /* Bordes redondeados. */
+    margin: 10px 0;    /* Margen arriba y abajo. */
     padding: 20px;
     width: 50%;
-    position: relative;
+    position: relative; /* Permite moverlo con 'left'. */
     left: 25%;
 }
 
 input[type="text"],
 input[type="email"],
-select,
+select, /*aplicando los mismos estilos que a los otros campos de entrada (input, textarea) */
 textarea{
     width: 100%;
     padding: 10px;
     margin: 8px 0;
     border: 1px solid rgb(70, 70, 70);
     border-radius: 10px;
-    box-sizing: border-box;
+    box-sizing: border-box;   /* asegura que el borde y el padding no agranden más el ancho total.. */
 }
 
 input[type="submit"]{
@@ -28,11 +28,11 @@ input[type="submit"]{
     margin: 8px 0;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
+    cursor: pointer;   /* Cursor cambia a manito al pasar por encima. */
 }
 
 textarea:focus,input:focus{
-    background-color: rgb(255, 209, 252);
+    background-color: rgb(255, 209, 252);  /* Cambia el fondo cuando hacés clic (focus) en un campo. */
 }
 
 input[type="submit"]:hover{
